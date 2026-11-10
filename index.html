@@ -49,79 +49,84 @@
 
     <!-- Main -->
     <main class="main">
+
+        <!-- Section keyvisual  -->
         <section class="p-section-keyvisual">
             <div class="container">
-                <div class="p-section-keyvisual__inner">
-                    <div class="p-section-keyvisual__left">
+                <div class="keyvisual__inner">
+                    <div class="keyvisual__left">
                         <img src="./assets/images/keyvisual.png" alt="Howard Stark">
                     </div>
 
-                    <div class="p-section-keyvisual__right">
-                        <div class="p-section-keyvisual__subtitle">
-                            <span class="p-section-keyvisual__subtitle-line"></span>
-                            <div class="p-section-keyvisual__subtitle-text">
+                    <div class="keyvisual__right">
+                        <div class="keyvisual__subtitle">
+                            <span class="keyvisual__subtitle-line"></span>
+                            <div class="keyvisual__subtitle-text">
                                 <span>VISUAL DESIGNER</span>
                                 <span>WEBFLOW DEVELOPER</span>
                             </div>
                         </div>
 
-                        <h1 class="p-section-keyvisual__title" aria-label="Hello, I'm Howard Stark.">
-                            Hello, I<svg class="p-section-keyvisual__apostrophe" viewBox="0 0 12.1 20.3"
-                                fill="currentColor" aria-hidden="true">
+                        <h1 class="keyvisual__title" aria-label="Hello, I'm Howard Stark.">
+                            Hello, I<svg class="keyvisual__apostrophe" viewBox="0 0 12.1 20.3" fill="currentColor"
+                                aria-hidden="true">
                                 <path
                                     d="M12.074 0V5.8C12.074 7.46 11.752 9.2 11.108 11C10.483 12.77 9.621 14.48 8.522 16.11C7.424 17.72 6.174 19.1 4.772 20.26L0 17.16C1.041 15.59 1.95 13.89 2.727 12.07C3.503 10.24 3.892 8.16 3.892 5.85V0H12.074Z" />
                             </svg>m<br>Howard Stark.
                         </h1>
 
-                        <p class="p-section-keyvisual__desc">
+                        <p class="keyvisual__desc">
                             Hello, I'm a passionate Visual Designer, Webflow Developer and part time freelancer
                             with a
                             keen eye for details.
                         </p>
 
-                        <div class="p-section-keyvisual__actions">
-                            <a href="#contact" class="c-btn c-btn--primary">Say Hello</a>
-                            <a href="#portfolio" class="c-btn c-btn--secondary">View Portfolio ↗</a>
+                        <div class="keyvisual__actions">
+                            <a href="#contact" class="c-btn c-btn--primary keyvisual__btn-primary">Say Hello</a>
+                            <a href="#portfolio" class="c-btn c-btn--secondary keyvisual__btn-secondary">
+                                View Portfolio
+                                <img src="/assets/svg/icon/ArrowUpRight.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section: Companies -->
+        <!-- Section companies -->
         <section class="p-section-companies">
             <div class="container">
-                <div class="p-section-companies__inner">
+                <div class="companies__inner">
                     <!-- Companies left -->
-                    <div class="p-section-companies__left">
-                        <h2 class="p-section-companies__title">
+                    <div class="companies__left">
+                        <h2 class="companies__title c-title-h2">
                             I work with 524+ big companies worldwide.
                         </h2>
-                        <p class="p-section-companies__desc">
+                        <p class="companies__desc">
                             I specialize in UI/UX & Graphic Design and my passion is all about building elegant and
                             professional user interfaces.
                         </p>
                     </div>
 
                     <!-- Companies right -->
-                    <div class="p-section-companies__right">
-                        <div class="p-section-companies__logos">
-                            <div class="p-section-companies__logo">
+                    <div class="companies__right">
+                        <div class="companies__logos">
+                            <div class="companies__logo">
                                 <img src="./assets/svg/Property 1=Spotify.svg" alt="Spotify">
                             </div>
-                            <div class="p-section-companies__logo">
+                            <div class="companies__logo">
                                 <img src="./assets/svg/Property 1=Coinbase.svg" alt="Coinbase">
                             </div>
-                            <div class="p-section-companies__logo">
+                            <div class="companies__logo">
                                 <img src="./assets/svg/Property 1=Slack.svg" alt="Slack">
                             </div>
-                            <div class="p-section-companies__logo">
+                            <div class="companies__logo">
                                 <img src="./assets/svg/Property 1=Dropbox.svg" alt="Dropbox">
                             </div>
-                            <div class="p-section-companies__logo">
+                            <div class="companies__logo">
                                 <img src="./assets/svg/Property 1=Webflow.svg" alt="Webflow">
                             </div>
-                            <div class="p-section-companies__logo">
+                            <div class="companies__logo">
                                 <img src="./assets/svg/Property 1=Zoom.svg" alt="Zoom">
                             </div>
                         </div>
@@ -129,54 +134,723 @@
                 </div>
             </div>
         </section>
-        <!-- Section: Testimonial -->
+
+        <!-- Section testimonial -->
         <section class="p-section-testimonial">
             <div class="container">
-                <div class="p-section-testimonial__inner">
+                <div class="testimonial__inner">
                     <!-- Testimonial left -->
-                    <div class="p-section-testimonial__left">
-                        <h2 class="p-section-testimonial__title">
+                    <div class="testimonial__left">
+                        <h2 class="testimonial__title c-title-h2">
                             What my clients<br>say about my work!
                         </h2>
 
-                        <div class="p-section-testimonial__card">
-                            <p class="p-section-testimonial__quote">
-                                &ldquo;Great Designer, does great work and is very flexible with<br>change. if you&rsquo;re a programmer and are looking for UI/UX<br>designer is definitely well qualified for the job.&rdquo;
-                            </p>
-                            <div class="p-section-testimonial__author">
-                                <span class="p-section-testimonial__author-name">James Quincey</span>
-                                <span class="p-section-testimonial__author-title">CEO of Coca ColA</span>
+                        <div class="testimonial__slider-wrap">
+                            <div class="testimonial__slider" id="testimonialSlider">
+                                <div class="testimonial__card">
+                                    <p class="testimonial__quote">
+                                        &ldquo;Great Designer, does great work and is very flexible with<br>change. if
+                                        you&rsquo;re a programmer and are looking for UI/UX<br>designer is definitely
+                                        well qualified for the job.&rdquo;
+                                    </p>
+                                    <div class="testimonial__author">
+                                        <span class="testimonial__author-name">James Quincey</span>
+                                        <span class="testimonial__author-title">CEO of Coca ColA</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial__card">
+                                    <p class="testimonial__quote">
+                                        &ldquo;Great Designer, does great work and is very flexible with<br>change. if
+                                        you&rsquo;re a programmer and are looking for UI/UX<br>designer is definitely
+                                        well qualified for the job.&rdquo;
+                                    </p>
+                                    <div class="testimonial__author">
+                                        <span class="testimonial__author-name">James Quincey</span>
+                                        <span class="testimonial__author-title">CEO of Coca ColA</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial__card">
+                                    <p class="testimonial__quote">
+                                        &ldquo;Great Designer, does great work and is very flexible with<br>change. if
+                                        you&rsquo;re a programmer and are looking for UI/UX<br>designer is definitely
+                                        well qualified for the job.&rdquo;
+                                    </p>
+                                    <div class="testimonial__author">
+                                        <span class="testimonial__author-name">James Quincey</span>
+                                        <span class="testimonial__author-title">CEO of Coca ColA</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="p-section-testimonial__controls">
-                            <button type="button" class="p-section-testimonial__control-btn p-section-testimonial__control-btn--prev" aria-label="Previous testimonial">
+                        <div class="testimonial__controls">
+                            <button type="button" class="testimonial__control-btn testimonial__control-btn--prev"
+                                id="testimonialPrev" aria-label="Previous testimonial">
                                 <img src="./assets/svg/icon/CaretRight.svg" alt="" aria-hidden="true">
                             </button>
-                            <div class="p-section-testimonial__dots">
-                                <span class="p-section-testimonial__dot is-active"></span>
-                                <span class="p-section-testimonial__dot"></span>
-                                <span class="p-section-testimonial__dot"></span>
-                                <span class="p-section-testimonial__dot"></span>
+                            <div class="testimonial__dots">
+                                <button type="button" class="testimonial__dot is-active"
+                                    aria-label="Show testimonial 1" aria-current="true"></button>
+                                <button type="button" class="testimonial__dot"
+                                    aria-label="Show testimonial 2" aria-current="false"></button>
+                                <button type="button" class="testimonial__dot"
+                                    aria-label="Show testimonial 3" aria-current="false"></button>
                             </div>
-                            <button type="button" class="p-section-testimonial__control-btn p-section-testimonial__control-btn--next" aria-label="Next testimonial">
+                            <button type="button" class="testimonial__control-btn testimonial__control-btn--next"
+                                id="testimonialNext" aria-label="Next testimonial">
                                 <img src="./assets/svg/icon/CaretRight.svg" alt="" aria-hidden="true">
                             </button>
                         </div>
                     </div>
 
                     <!-- Testimonial right  -->
-                    <div class="p-section-testimonial__right">
+                    <div class="testimonial__right">
                         <img src="./assets/images/testimonial.png" alt="What my clients say about my work">
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Section resume -->
+        <section class="p-section-resume">
+            <div class="container">
+                <div class="resume__inner">
+
+                    <!-- Summary -->
+                    <div class="resume__summary">
+
+                        <div class="resume__avatar">
+                            <img src="./assets/images/avatar/avt-resume.jpg" alt="Profile">
+                        </div>
+
+                        <div class="resume__info">
+                            <h2 class="resume__title">
+                                Visual Designer & Webflow Developer.
+                            </h2>
+
+                            <p class="resume__desc">
+                                I specialize in UI/UX & Graphic Design and my passion is all about building elegant and
+                                professional user interfaces and websites. I also do branding nd identity design such as
+                                logo design, and business cards, along with photo editing.
+                            </p>
+                        </div>
+
+                        <div class="resume__actions">
+                            <button type="button" class="resume__actions-btn c-btn c-btn--primary">
+                                <span>Request Quotation</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M3.75 12H20.25" />
+                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" />
+                                </svg>
+                            </button>
+
+                            <button type="button" class="resume__actions-btn c-btn c-btn--secondary">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M16.5 12H21C21.1989 12 21.3897 12.079 21.5303 12.2197C21.671 12.3603 21.75 12.5511 21.75 12.75V18.75C21.75 18.9489 21.671 19.1397 21.5303 19.2803C21.3897 19.421 21.1989 19.5 21 19.5H3C2.80109 19.5 2.61032 19.421 2.46967 19.2803C2.32902 19.1397 2.25 18.9489 2.25 18.75V12.75C2.25 12.5511 2.32902 12.3603 2.46967 12.2197C2.61032 12.079 2.80109 12 3 12H7.5" />
+                                    <path d="M12 2.25V12" />
+                                    <path d="M7.5 7.5L12 12L16.5 7.5" />
+                                    <circle cx="17.625" cy="15.75" r="1.125" fill="currentColor" stroke="none" />
+                                </svg>
+                                <span>Download Resume</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <div class="resume__content">
+
+                        <!-- Education -->
+                        <div class="resume__content-education">
+                            <div class="subtitle">
+                                <span class="sub-line bg-blue"></span>
+                                <h3 class="content-education_heading blue m-0">
+                                    Education
+                                </h3>
+                            </div>
+
+                            <div class="content-education__list">
+
+                                <ul class="content-education__card">
+                                    <li class="content-education__item">
+                                        <div class="head-item">
+                                            <div class="blue resume__meta">
+                                                <time datetime="2021">2021 - Present</time>
+                                                <span aria-hidden="true">•</span>
+                                                <span>UK</span>
+                                            </div>
+
+                                            <h4 class="content-education__card-title">
+                                                Website Design Course
+                                            </h4>
+                                        </div>
+
+                                        <p class="content-education__card-desc">
+                                            Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson,
+                                            Missouri.
+                                        </p>
+                                    </li>
+
+                                    <li class="content-education__item">
+                                        <div class="head-item">
+                                            <div class="blue resume__meta">
+                                                <time datetime="2021">2016 - 2019</time>
+                                                <span aria-hidden="true">•</span>
+                                                <span>Cambridge University</span>
+                                            </div>
+
+                                            <h4 class="content-education__card-title">
+                                                Bachelor of Philosophy (B. Phil.)
+                                            </h4>
+                                        </div>
+
+                                        <p class="content-education__card-desc">
+                                            Coursework - Git, WordPress, Javascript, iOS, Android, appleos and macos.
+                                        </p>
+                                    </li>
+
+                                    <li class="content-education__item">
+                                        <div class="head-item">
+                                            <div class="blue resume__meta">
+                                                <time datetime="2021">2010 - 2014</time>
+                                                <span aria-hidden="true">•</span>
+                                                <span>Oxford University</span>
+                                            </div>
+
+                                            <h4 class="content-education__card-title">
+                                                Bachelor of Engineering (B. Eng.)
+                                            </h4>
+                                        </div>
+
+                                        <p class="content-education__card-desc">
+                                            Bachelor's Degree in Computer Science ABC Technical Institute, Jefferson,
+                                            Missouri. </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!-- Work -->
+                        <div class="resume__content-work">
+                            <div class="subtitle">
+                                <span class="sub-line bg-orange"></span>
+                                <h3 class="content-work_heading orange m-0">
+                                    Work History
+                                </h3>
+                            </div>
+
+                            <div class="content-work__list">
+                                <ul class="content-work__card">
+                                    <li class="content-work__item">
+                                        <div class="head-item">
+                                            <div class="orange resume__meta">
+                                                <time datetime="2021">2019 - Present</time>
+                                                <span aria-hidden="true">•</span>
+                                                <span>Google</span>
+                                            </div>
+
+                                            <h4 class="content-work__card-title">
+                                                Team Lead of UI/UX Designer
+                                            </h4>
+                                        </div>
+
+                                        <p class="content-work__card-desc">
+                                            Collaborate with creative and development teams on the execution of ideas.
+                                        </p>
+                                    </li>
+
+                                    <li class="content-work__item">
+                                        <div class="head-item">
+                                            <div class="orange resume__meta">
+                                                <time datetime="2021">2016 - 2019</time>
+                                                <span aria-hidden="true">•</span>
+                                                <span>Apple</span>
+                                            </div>
+
+                                            <h4 class="content-work__card-title">
+                                                Senior UI/UX Designer
+                                            </h4>
+                                        </div>
+
+                                        <p class="content-work__card-desc">
+                                            Monitored technical aspects of the front-end delivery for projects.
+                                        </p>
+                                    </li>
+
+                                    <li class="content-work__item">
+                                        <div class="head-item">
+                                            <div class="orange resume__meta">
+                                                <time datetime="2021">2010 - 2014</time>
+                                                <span aria-hidden="true">•</span>
+                                                <span>Nasa</span>
+                                            </div>
+
+                                            <h4 class="content-work__card-title">
+                                                UI/UX Designer
+                                            </h4>
+                                        </div>
+
+                                        <p class="content-work__card-desc">
+                                            Optimize your website and apps performance using latest technology. </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!-- right Tools -->
+                        <div class="resume__content-right">
+                            <div class="subtitle">
+                                <span class="sub-line bg-green"></span>
+                                <h3 class="content-right_heading m-0">
+                                    Tools I Use
+                                </h3>
+                            </div>
+
+                            <div class="resume__tools">
+
+                                <div class="tool-card">
+                                    <img src="/assets/svg/logo/slack.svg" alt="">
+                                    <p>Slack</p>
+                                </div>
+
+                                <div class="tool-card">
+                                    <img src="/assets/svg/logo/figma.svg" alt="">
+                                    <p>Figma</p>
+                                </div>
+
+                                <div class="tool-card">
+                                    <img src="/assets/svg/logo/sketch.svg" alt="">
+                                    <p>Sketch</p>
+                                </div>
+
+                                <div class="tool-card">
+                                    <img src="/assets/svg/logo/photoshop.svg" alt="">
+                                    <p>Photoshop</p>
+                                </div>
+
+                                <div class="tool-card">
+                                    <img src="/assets/svg/logo/Illustrator.svg" alt="">
+                                    <p>Illustrator</p>
+                                </div>
+
+                                <div class="tool-card">
+                                    <img src="/assets/svg/logo/Adobe XD.svg" alt="">
+                                    <p>Adobe XD</p>
+                                </div>
+
+                                <div class="tool-card">
+                                    <img src="/assets/svg/logo/Notion.svg" alt="">
+                                    <p>Notion</p>
+                                </div>
+
+                                <div class="tool-card">
+                                    <img src="/assets/svg/logo/Webflow.svg" alt="">
+                                    <p>Webflow</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="container">
+            <div class="c-divider"></div>
+        </div>
+
+        <!-- Section process -->
+        <section class="p-section-process">
+            <div class="container">
+                <div class="process__inner">
+
+                    <!-- Process left -->
+                    <div class="process__left">
+                        <div class="process__label">
+                            <img src="./assets/svg/logo/process1.svg" alt="" aria-hidden="true">
+                            <span>Let’s work together!</span>
+                        </div>
+
+                        <p class="process__desc">
+                            I am taking on new projects. Waiting to hear about new projects, so if you'd like to chat
+                            please get in touch.
+                        </p>
+
+                        <a href="mailto:howardstark@info.com" class="process__email">
+                            howardstark@info.com
+                        </a>
+
+                        <div class="process__divider"></div>
+
+                        <div class="process__stats">
+                            <div class="process__stat">
+                                <span class="process__stat-number">17+</span>
+                                <span class="process__stat-label">Years of Experience</span>
+                            </div>
+
+                            <div class="process__stat">
+                                <span class="process__stat-number">390+</span>
+                                <span class="process__stat-label">Completed Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process right -->
+                    <div class="process__right">
+                        <h2 class="process__title c-title-h2">Working process</h2>
+
+                        <p class="process__right-desc">
+                            I specialize in UI/UX & Graphic Design and my passion is all about building elegant and
+                            professional user interfaces.
+                        </p>
+
+                        <div class="process__grid">
+                            <div class="process__card top-1">
+                                <img src="./assets/svg/logo/process2.svg" alt="" aria-hidden="true">
+                                <span>1. Project Introduction</span>
+                            </div>
+
+                            <div class="process__card top-1">
+                                <img src="./assets/svg/logo/process3.svg" alt="" aria-hidden="true">
+                                <span>2. Visual Design</span>
+                            </div>
+
+                            <div class="process__card">
+                                <img src="./assets/svg/logo/process4.svg" alt="" aria-hidden="true">
+                                <span class="top-1">3. Webflow Development</span>
+                            </div>
+
+                            <div class="process__card top-1">
+                                <img src="./assets/svg/logo/process5.svg" alt="" aria-hidden="true">
+                                <span>4. Revision & Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section service -->
+        <section class="p-section-service">
+            <div class="container">
+                <div class="service__inner">
+
+                    <div class="service__head">
+                        <h2 class="service__title c-title-h2">
+                            Service I provide
+                        </h2>
+
+                        <p class="service__desc">
+                            I specialize in UI/UX & Graphic Design and my passion is all about building elegant and
+                            professional user interfaces.
+                        </p>
+                    </div>
+
+                    <div class="service__grid">
+                        <ul class="service__card">
+                            <li class="service__item">
+                                <div class="service__icon-box">
+                                    <img src="./assets/svg/icon/service1.svg" alt="User Interface Design"
+                                        class="service__icon">
+                                </div>
+                                <div class="service__item-text">
+                                    <h3 class="service__item-title">User Interface Design</h3>
+                                    <p class="service__item-desc">Proin egestas, nisi vitae hendrerit maximus, mauris
+                                        nunc facilisis odi.</p>
+                                </div>
+                            </li>
+                            <li class="service__item">
+                                <div class="service__icon-box">
+                                    <img src="./assets/svg/icon/service2.svg" alt="Product Marketing"
+                                        class="service__icon">
+                                </div>
+                                <div class="service__item-text">
+                                    <h3 class="service__item-title">Product Marketing</h3>
+                                    <p class="service__item-desc">Proin egestas, nisi vitae hendrerit maximus, mauris
+                                        nunc facilisis odi.</p>
+                                </div>
+                            </li>
+                            <li class="service__item">
+                                <div class="service__icon-box">
+                                    <img src="./assets/svg/icon/service3.svg" alt="Webflow Development"
+                                        class="service__icon">
+                                </div>
+                                <div class="service__item-text">
+                                    <h3 class="service__item-title">Webflow Development</h3>
+                                    <p class="service__item-desc">Proin egestas, nisi vitae hendrerit maximus, mauris
+                                        nunc facilisis odi.</p>
+                                </div>
+                            </li>
+                            <li class="service__item">
+                                <div class="service__icon-box">
+                                    <img src="./assets/svg/icon/service4.svg" alt="Content Writing"
+                                        class="service__icon">
+                                </div>
+                                <div class="service__item-text">
+                                    <h3 class="service__item-title">Content Writing</h3>
+                                    <p class="service__item-desc">Proin egestas, nisi vitae hendrerit maximus, mauris
+                                        nunc facilisis odi.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="service__action">
+                        <a href="#contact" class="c-btn c-btn--primary service__btn">
+                            <span>Request Quote</span>
+                            <img src="./assets/svg/icon/VectorRight.svg" alt="" aria-hidden="true">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section achievements -->
+        <section class="p-section-achievements">
+            <div class="container">
+                <div class="achievements__inner">
+
+                    <!-- achievements left -->
+                    <div class="achievements__left">
+                        <ul class="achievements__left-card">
+                            <li class="achievements__left-card-item">
+                                <div class="left-card-icon">
+                                    <img src="./assets/svg/icon/achievmentsW..svg" alt="Awwwards">
+                                </div>
+                                <div class="left-card-text">
+                                    <h3 class="left-card-title">
+                                        Awwwards Judge ‘19-20
+                                    </h3>
+                                    <p class="left-card-desc">
+                                        Awwwards is a professional web design and development competition body. It aims
+                                        to recognize and promote.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="achievements__left-card-item">
+                                <div class="left-card-icon">
+                                    <img src="./assets/svg/icon/achievmentsSite.svg" alt="Site of the Years for Lewis">
+                                </div>
+                                <div class="left-card-text">
+                                    <h3 class="left-card-title">
+                                        Site of the Years for Lewis
+                                    </h3>
+                                    <p class="left-card-desc">
+                                        Lewis University offers practical, goal-oriented education for undergraduate
+                                        student, graduate.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- achievements right -->
+                    <div class="achievements__right">
+                        <div class="achievements__right-info">
+                            <h2 class="achievements__right-title c-title-h2">
+                                My achievments
+                            </h2>
+                            <p class="achievements__right-desc">
+                                Sed semper, felis at facilisis auctor, justo eros vulputate nulla, dapibus suscipit
+                                augue ex id dui. Integer a elit id enim eleifend tristique sed vel sem. Donec sodales
+                                urna sit amet mauris volutpat pellentesque. Suspendisse potenti. In ornare convallis
+                                nisi ut viverra.
+                            </p>
+                        </div>
+                        <div class="achievements__languages">
+                            <p class="achievements__languages-title">
+                                Language i can speak
+                            </p>
+                            <ul class="language-list">
+                                <li class="language-item language-item--english">English</li>
+                                <li class="language-item language-item--mandarin">Mandarin</li>
+                                <li class="language-item language-item--spanish">Spanish</li>
+                                <li class="language-item language-item--hindi">Hindi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="container">
+            <div class="c-divider"></div>
+        </div>
+
+        <!-- Section studies -->
+        <section class="p-section-studies">
+            <div class="container">
+                <h2 class="studies__title c-title-h2">
+                    Latest case studies
+                </h2>
+            </div>
+
+            <div class="studies__slider-wrap">
+                <div class="studies__slider" id="studiesSlider">
+                    <!-- Slide 1 -->
+                    <div class="studies__slide">
+                        <img src="./assets/images/slide/study1.jpg" alt="Case Study 1" class="studies__slide-img">
+                        <div class="studies__slide-overlay">
+                            <span class="studies__slide-tag">WEBSITE</span>
+                            <h3 class="studies__slide-title">Mobile Banking App</h3>
+                            <p class="studies__slide-desc">
+                                Modern and intuitive mobile banking dashboard with real-time financial analytics.
+                            </p>
+                            <a href="#case-study" class="c-btn c-btn--outline c-btn--outline-white studies__btn-case">
+                                <span>Case Study</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="white" />
+                                    <path d="M9 6.5L12.5 10L9 13.5" stroke="#121314" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 10H6.5" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 (Active in center) -->
+                    <div class="studies__slide is-active">
+                        <img src="./assets/images/slide/study2.jpg" alt="Relik - Admin Dashboard"
+                            class="studies__slide-img">
+                        <div class="studies__slide-overlay">
+                            <span class="studies__slide-tag">WEBSITE</span>
+                            <h3 class="studies__slide-title">Relik - Admin Dashboard</h3>
+                            <p class="studies__slide-desc">
+                                👉 Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard
+                                template with a 💎 high-quality UI & well-organized Figma file🔥.
+                            </p>
+                            <a href="#case-study" class="c-btn c-btn--outline c-btn--outline-white studies__btn-case">
+                                <span>Case Study</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="white" />
+                                    <path d="M9 6.5L12.5 10L9 13.5" stroke="#121314" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 10H6.5" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="studies__slide">
+                        <img src="./assets/images/slide/study3.jpg" alt="NFT Marketplace" class="studies__slide-img">
+                        <div class="studies__slide-overlay">
+                            <span class="studies__slide-tag">WEBSITE</span>
+                            <h3 class="studies__slide-title">NFT Marketplace Platform</h3>
+                            <p class="studies__slide-desc">
+                                Discover digital art and collect NFTs with an immersive, high-conversion Web3
+                                experience.
+                            </p>
+                            <a href="#case-study" class="c-btn c-btn--outline c-btn--outline-white studies__btn-case">
+                                <span>Case Study</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="white" />
+                                    <path d="M9 6.5L12.5 10L9 13.5" stroke="#121314" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 10H6.5" stroke="#121314" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation arrows within 1320px container -->
+                <div class="container studies__nav-container">
+                    <button type="button" class="studies__nav-btn studies__nav-btn--prev" id="studiesPrev"
+                        aria-label="Previous slide">
+                        <img src="./assets/svg/icon/CaretRight.svg" alt="" aria-hidden="true">
+                    </button>
+                    <button type="button" class="studies__nav-btn studies__nav-btn--next" id="studiesNext"
+                        aria-label="Next slide">
+                        <img src="./assets/svg/icon/CaretRight.svg" alt="" aria-hidden="true">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom Action Button -->
+            <div class="container">
+                <div class="studies__action">
+                    <a href="#portfolio" class="c-btn c-btn--outline c-btn--outline-primary studies__btn-all">
+                        View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <!-- footer cta -->
+            <div class="footer__cta">
+                <h2 class="footer__cta-title c-title-h2">
+                    Have a project idea in mind. <br>
+                    Get in touch and let's chat!
+                </h2>
+                <ul class="footer__contact">
+                    <li class="footer__contact-item">
+                        <img src="/assets/svg/footer/Send.svg" alt="send">
+                        <p class="footer__contact-item--label">
+                            Email Address
+                        </p>
+                        <a href="#" class="footer__contact-item--value">
+                            howardstark@info.com
+                        </a>
+                    </li>
+                    <li class="footer__contact-item">
+                        <img src="/assets/svg/footer/Calling.svg" alt="send">
+                        <p class="footer__contact-item--label">
+                            Phone Number
+                        </p>
+                        <a href="#" class="footer__contact-item--value">
+                            (406) 555-0120
+                        </a>
+                    </li>
+                    <li class="footer__contact-item">
+                        <img src="/assets/svg/footer/Freelancer.svg" alt="send">
+                        <p class="footer__contact-item--label">
+                            Available on Fiverr.
+                        </p>
+                        <a href="#" class="footer__contact-item--value">
+                            howard.stark123
+                        </a>
+                    </li>
+                </ul>
+                <div class="service__action">
+                    <a href="#contact" class="c-btn c-btn--primary footer-btn">
+                        <span>Request Quote</span>
+                        <img src="./assets/svg/icon/VectorRight.svg" alt="" aria-hidden="true">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- footer bottom -->
+        <div class="footer__bottom">
+            <small class="footer__copyright">
+                All Content © 2006–Current Howard Stark and Respective Copyright Holders.
+            </small>
         </div>
     </footer>
 
