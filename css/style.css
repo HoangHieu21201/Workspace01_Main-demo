@@ -279,7 +279,12 @@ main {
   transition: color 0.2s ease;
 }
 
-.header__menu a:hover,
+.header__menu a:hover {
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-blue-1777E5);
+  background-color: var(--color-blue-E8F1FC);
+}
+
 .header__menu a.is-active {
   color: var(--color-black);
 }
@@ -328,19 +333,27 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    width: 40px;
-    height: 40px;
-    padding: 9px;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    box-shadow: 0 1px 14px var(--color-blue-E8F1FC);
     border: 0;
-    border-radius: 4px;
+    border-radius: 8px;
     background: transparent;
     cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+    }
   }
 
-  .header__menu-toggle span {
+
+  /* .header__menu-toggle span {
     display: block;
-    width: 22px;
+    width: 29px;
     height: 2px;
     border-radius: 2px;
     background-color: var(--color-black);
@@ -359,7 +372,7 @@ main {
 
   .header__menu-toggle[aria-expanded="true"] span:last-child {
     transform: translateY(-7px) rotate(-45deg);
-  }
+  } */
 
   .header__logo {
     justify-self: center;
@@ -398,7 +411,7 @@ main {
   .header__menu a {
     display: block;
     width: 100%;
-    padding: 12px 0;
+    padding: 12px;
   }
 
   .header__menu a.is-active {
@@ -640,7 +653,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 536px;
+    width: 536px;
   }
 
   .companies__desc {
@@ -683,9 +696,9 @@ main {
 
 @media (max-width: 1200px) {
   .p-section-companies {
-    .companies__inner {
-      gap: 60px;
-    }
+    padding-block: 120px 80px;
+
+    .companies__inner {}
 
     .companies__logos {
       width: 100%;
@@ -702,12 +715,16 @@ main {
       width: auto;
       flex: 1;
     }
+
+    .companies__left {
+      width: 455px;
+    }
   }
 }
 
 @media (max-width: 992px) {
   .p-section-companies {
-    padding-block: 80px;
+    padding-block: 100px 80px;
 
     .companies__inner {
       flex-direction: column;
@@ -716,7 +733,7 @@ main {
     }
 
     .companies__left {
-      max-width: 100%;
+      width: 100%;
       align-items: center;
 
       .companies__desc {
@@ -784,7 +801,7 @@ main {
   }
 
   .testimonial__title {
-    max-width: 536px;
+    width: 456px;
   }
 
   .testimonial__slider-wrap {
@@ -965,6 +982,7 @@ main {
 
 @media (min-width: 993px) and (max-width: 1368px) {
   .p-section-testimonial {
+
     .testimonial__inner {
       min-width: 0;
       gap: clamp(24px, 2.5vw, 36px);
@@ -987,6 +1005,10 @@ main {
 @media (max-width: 992px) {
   .p-section-testimonial {
     padding-block: 80px;
+
+    .testimonial__title {
+      width: 100%;
+    }
 
     .testimonial__inner {
       flex-direction: column-reverse;
@@ -2136,7 +2158,7 @@ main {
   }
 
   .left-card-title {
-    margin: 0 0 6px;
+    margin: 0 0 7px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -2758,7 +2780,9 @@ main {
 
 @media (max-width: 992px) {
   .footer {
-    .footer__cta {}
+    .footer__cta {
+      padding-block: 120px 100px;
+    }
 
     .footer__contact {
       display: grid;
@@ -2805,7 +2829,8 @@ main {
 @media (max-width: 576px) {
   .footer {
     .footer__cta {
-      padding-block: 100px 80px;
+      padding-block: 60px 40px;
+      gap: 40px;
     }
 
     .footer__copyright {
@@ -2830,8 +2855,7 @@ main {
 
   .p-section-companies {
     .companies__inner {
-
-      gap: 30;
+      gap: 30px;
     }
 
     .companies__logos {
