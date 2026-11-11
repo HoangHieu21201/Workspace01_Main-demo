@@ -7,10 +7,8 @@
     <title>page01_main demo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -21,13 +19,19 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                <button class="header__menu-toggle" type="button" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="headerNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
                 <a href="/" class="header__logo">
                     <img src="./assets/svg/logo/logoSmiley.svg" alt="Howard">
                     <span class="label__logo">Howard</span>
                 </a>
 
-                <nav class="header__nav">
+                <nav class="header__nav" id="headerNav" aria-label="Main navigation">
                     <ul class="header__menu">
                         <li><a href="#" class="is-active">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -35,14 +39,13 @@
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li>
-                            <!-- CTA -->
-                            <a href="mailto:howard@gmail.com" class="header__cta">
-                                howard@gmail.com
-                            </a>
-                        </li>
                     </ul>
                 </nav>
+
+                <a href="mailto:howard@gmail.com" class="header__cta" aria-label="Email Howard at howard@gmail.com"
+                    title="howard@gmail.com">
+                    <span>howard@gmail.com</span>
+                </a>
             </div>
         </div>
     </header>
@@ -85,7 +88,14 @@
                             <a href="#contact" class="c-btn c-btn--primary keyvisual__btn-primary">Say Hello</a>
                             <a href="#portfolio" class="c-btn c-btn--secondary keyvisual__btn-secondary">
                                 View Portfolio
-                                <img src="/assets/svg/icon/ArrowUpRight.svg" alt="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18L18 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="currentColor" />
+                                    <path d="M8.25 6H18V15.75" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke="currentColor" />
+                                </svg>
+
                             </a>
                         </div>
                     </div>
@@ -112,22 +122,22 @@
                     <div class="companies__right">
                         <div class="companies__logos">
                             <div class="companies__logo">
-                                <img src="./assets/svg/Property 1=Spotify.svg" alt="Spotify">
+                                <img src="./assets/svg/Spotify.svg" alt="Spotify">
                             </div>
                             <div class="companies__logo">
-                                <img src="./assets/svg/Property 1=Coinbase.svg" alt="Coinbase">
+                                <img src="./assets/svg/Coinbase.svg" alt="Coinbase">
                             </div>
                             <div class="companies__logo">
-                                <img src="./assets/svg/Property 1=Slack.svg" alt="Slack">
+                                <img src="./assets/svg/Slack.svg" alt="Slack">
                             </div>
                             <div class="companies__logo">
-                                <img src="./assets/svg/Property 1=Dropbox.svg" alt="Dropbox">
+                                <img src="./assets/svg/Dropbox.svg" alt="Dropbox">
                             </div>
                             <div class="companies__logo">
-                                <img src="./assets/svg/Property 1=Webflow.svg" alt="Webflow">
+                                <img src="./assets/svg/Webflow.svg" alt="Webflow">
                             </div>
                             <div class="companies__logo">
-                                <img src="./assets/svg/Property 1=Zoom.svg" alt="Zoom">
+                                <img src="./assets/svg/Zoom.svg" alt="Zoom">
                             </div>
                         </div>
                     </div>
@@ -149,8 +159,8 @@
                             <div class="testimonial__slider" id="testimonialSlider">
                                 <div class="testimonial__card">
                                     <p class="testimonial__quote">
-                                        &ldquo;Great Designer, does great work and is very flexible with<br>change. if
-                                        you&rsquo;re a programmer and are looking for UI/UX<br>designer is definitely
+                                        &ldquo;Great Designer, does great work and is very flexible with change. if
+                                        you&rsquo;re a programmer and are looking for UI/UX designer is definitely
                                         well qualified for the job.&rdquo;
                                     </p>
                                     <div class="testimonial__author">
@@ -160,8 +170,8 @@
                                 </div>
                                 <div class="testimonial__card">
                                     <p class="testimonial__quote">
-                                        &ldquo;Great Designer, does great work and is very flexible with<br>change. if
-                                        you&rsquo;re a programmer and are looking for UI/UX<br>designer is definitely
+                                        &ldquo;Great Designer, does great work and is very flexible with change. if
+                                        you&rsquo;re a programmer and are looking for UI/UX designer is definitely
                                         well qualified for the job.&rdquo;
                                     </p>
                                     <div class="testimonial__author">
@@ -171,8 +181,19 @@
                                 </div>
                                 <div class="testimonial__card">
                                     <p class="testimonial__quote">
-                                        &ldquo;Great Designer, does great work and is very flexible with<br>change. if
-                                        you&rsquo;re a programmer and are looking for UI/UX<br>designer is definitely
+                                        &ldquo;Great Designer, does great work and is very flexible with change. if
+                                        you&rsquo;re a programmer and are looking for UI/UX designer is definitely
+                                        well qualified for the job.&rdquo;
+                                    </p>
+                                    <div class="testimonial__author">
+                                        <span class="testimonial__author-name">James Quincey</span>
+                                        <span class="testimonial__author-title">CEO of Coca ColA</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial__card">
+                                    <p class="testimonial__quote">
+                                        &ldquo;Great Designer, does great work and is very flexible with change. if
+                                        you&rsquo;re a programmer and are looking for UI/UX designer is definitely
                                         well qualified for the job.&rdquo;
                                     </p>
                                     <div class="testimonial__author">
@@ -189,12 +210,14 @@
                                 <img src="./assets/svg/icon/CaretRight.svg" alt="" aria-hidden="true">
                             </button>
                             <div class="testimonial__dots">
-                                <button type="button" class="testimonial__dot is-active"
-                                    aria-label="Show testimonial 1" aria-current="true"></button>
-                                <button type="button" class="testimonial__dot"
-                                    aria-label="Show testimonial 2" aria-current="false"></button>
-                                <button type="button" class="testimonial__dot"
-                                    aria-label="Show testimonial 3" aria-current="false"></button>
+                                <button type="button" class="testimonial__dot is-active" aria-label="Show testimonial 1"
+                                    aria-current="true"></button>
+                                <button type="button" class="testimonial__dot" aria-label="Show testimonial 2"
+                                    aria-current="false"></button>
+                                <button type="button" class="testimonial__dot" aria-label="Show testimonial 3"
+                                    aria-current="false"></button>
+                                <button type="button" class="testimonial__dot" aria-label="Show testimonial 4"
+                                    aria-current="false"></button>
                             </div>
                             <button type="button" class="testimonial__control-btn testimonial__control-btn--next"
                                 id="testimonialNext" aria-label="Next testimonial">
@@ -441,7 +464,7 @@
                                 </div>
 
                                 <div class="tool-card">
-                                    <img src="/assets/svg/logo/Adobe XD.svg" alt="">
+                                    <img src="/assets/svg/logo/AdobeXD.svg" alt="">
                                     <p>Adobe XD</p>
                                 </div>
 
@@ -805,7 +828,7 @@
             <!-- footer cta -->
             <div class="footer__cta">
                 <h2 class="footer__cta-title c-title-h2">
-                    Have a project idea in mind. <br>
+                    Have a project idea in mind.
                     Get in touch and let's chat!
                 </h2>
                 <ul class="footer__contact">

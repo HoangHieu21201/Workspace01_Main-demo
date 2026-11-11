@@ -1,7 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
+  initHeaderMenu();
   initStudiesSlider();
   initTestimonialsSlider();
 });
+
+function initHeaderMenu() {
+  const toggle = document.querySelector(".header__menu-toggle");
+  const nav = document.getElementById("headerNav");
+  if (!toggle || !nav) return;
+
+  function closeMenu() {
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open navigation menu");
+    nav.classList.remove("is-open");
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") !== "true";
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    nav.classList.toggle("is-open", isOpen);
+  });
+
+  nav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && nav.classList.contains("is-open")) {
+      closeMenu();
+      toggle.focus();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMenu();
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1100) closeMenu();
+  });
+}
 
 function initStudiesSlider() {
   const slider = document.getElementById("studiesSlider");
@@ -40,7 +79,7 @@ function initStudiesSlider() {
     slides.forEach((s, i) => s.classList.toggle("is-active", i === index));
 
     if (!animate) {
-      void slider.offsetWidth; // reflow 1 lần để snap ngay
+      void slider.offsetWidth; 
       slider.style.transition = "";
     }
   }
@@ -72,7 +111,6 @@ function initStudiesSlider() {
   nextBtn.addEventListener("click", next);
   prevBtn.addEventListener("click", prev);
 
-  // Click slide bên cạnh (chỉ đi 1 bước)
   slides.forEach((slide, i) => {
     slide.addEventListener("click", (e) => {
       if (e.target.closest("a, button")) return;
@@ -103,7 +141,6 @@ function initStudiesSlider() {
     { passive: true }
   );
 
-  // Phím mũi tên khi slider đang trong viewport
   let visible = false;
   new IntersectionObserver(([entry]) => (visible = entry.isIntersecting), {
     threshold: 0.2,
@@ -115,7 +152,6 @@ function initStudiesSlider() {
     else if (e.key === "ArrowLeft") prev();
   });
 
-  // Resize thì căn lại, không animation
   window.addEventListener("resize", () => position(false));
 }
 
