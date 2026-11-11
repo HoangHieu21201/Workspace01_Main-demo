@@ -1330,6 +1330,7 @@ main {
 
       .resume__info {
         .resume__desc {
+          text-align: justify;
           font-size: 18px;
           line-height: 28px;
         }
