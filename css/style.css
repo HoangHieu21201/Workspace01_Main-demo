@@ -1,6 +1,5 @@
 :root {
   --container-max-width: 1320px;
-  --container-inline-padding: 15px;
   --grid-column-count: 12;
   --grid-gutter: 24px;
   --color-white: #ffffff;
@@ -69,15 +68,9 @@ main {
 }
 
 .container {
-  width: calc(100% - 40px);
+  width: calc(100% - 48px);
   max-width: var(--container-max-width);
   margin-inline: auto;
-}
-
-@media (max-width: 1320px) {
-  .container {
-    padding-inline: var(--container-inline-padding);
-  }
 }
 
 /* btn common */
@@ -639,7 +632,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 136px;
+    /* gap: 136px; */
     min-height: 192px;
   }
 
@@ -697,6 +690,7 @@ main {
     .companies__logos {
       width: 100%;
       grid-template-columns: repeat(3, 1fr);
+      gap: 10px 20px;
     }
 
     .companies__logo {
@@ -969,6 +963,27 @@ main {
   }
 }
 
+@media (min-width: 993px) and (max-width: 1368px) {
+  .p-section-testimonial {
+    .testimonial__inner {
+      min-width: 0;
+      gap: clamp(24px, 2.5vw, 36px);
+    }
+
+    .testimonial__left {
+      min-width: 0;
+    }
+
+    .testimonial__right {
+      flex: 0 1 464px;
+      width: clamp(320px, 34vw, 464px);
+      min-width: 320px;
+      height: auto;
+      aspect-ratio: 29 / 32;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .p-section-testimonial {
     padding-block: 80px;
@@ -1013,6 +1028,10 @@ main {
 
     .testimonial__left {
       gap: 28px;
+    }
+
+    .testimonial__controls {
+      max-width: 100%;
     }
 
     .testimonial__card {
@@ -1632,6 +1651,47 @@ main {
 }
 
 /* RESPONSIVE */
+@media (min-width: 993px) and (max-width: 1368px) {
+  .p-section-process {
+    .process__inner {
+      gap: clamp(24px, 4vw, 48px);
+    }
+
+    .process__left,
+    .process__right {
+      width: auto;
+      min-width: 0;
+      flex: 1 1 0;
+      height: auto;
+    }
+
+    .process__right-desc {
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .process__email {
+      font-size: clamp(32px, 3vw, 40px);
+      line-height: 1.15;
+    }
+
+    .process__grid {
+      width: 100%;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .process__card {
+      width: 100%;
+      min-width: 0;
+      padding-inline: 20px;
+
+      span {
+        white-space: normal;
+        line-height: 1.3;
+      }
+    }
+  }
+}
 
 @media (max-width: 1200px) {
   .p-section-process {
@@ -1652,7 +1712,7 @@ main {
 
     .process__grid {
       width: 100%;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .process__card {
@@ -1925,15 +1985,22 @@ main {
 
 /* RESPONSIVE: Service */
 
-@media (max-width: 1320px) {
+@media (max-width: 1368px) {
   .p-section-service {
     .service__card {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 20px;
     }
 
     .service__item {
       width: 100%;
+      min-width: 0;
+    }
+
+    .service__item-text,
+    .service__item-desc {
+      width: 100%;
+      min-width: 0;
     }
   }
 }
@@ -2118,7 +2185,7 @@ main {
 
   .achievements__languages {
     width: 648px;
-    height: 136px;
+    min-height: 136px;
     padding: 32px 0px 32px 32px;
     background: var(--color-gray-F5F6F7);
     border-radius: 3px;
@@ -2207,31 +2274,7 @@ main {
 
 /* RESPONSIVE: Achievements */
 
-@media (max-width: 1320px) {
-  .p-section-achievements {
-    .achievements__inner {
-      gap: 32px;
-    }
 
-    .achievements__left {
-      width: 100%;
-      max-width: 556px;
-    }
-
-    .achievements__left-card-item {
-      width: 100%;
-    }
-
-    .achievements__right {
-      width: 100%;
-      max-width: 648px;
-    }
-
-    .achievements__languages {
-      width: 100%;
-    }
-  }
-}
 
 @media (max-width: 992px) {
   .p-section-achievements {
@@ -2768,6 +2811,70 @@ main {
     .footer__copyright {
       padding: 20px 0;
       font-size: 12px;
+    }
+
+    .footer__contact-item--value {
+      font-size: clamp(14px, 4.2vw, 18px);
+      overflow-wrap: anywhere;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .p-section-keyvisual {
+    .keyvisual__inner {
+      gap: 132px;
+
+    }
+  }
+
+  .p-section-companies {
+    .companies__inner {
+
+      gap: 30;
+    }
+
+    .companies__logos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      justify-items: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1320px) {
+  .p-section-achievements {
+    .achievements__inner {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
+    }
+
+    .achievements__left,
+    .achievements__right {
+      width: auto;
+      min-width: 0;
+      max-width: none;
+    }
+
+    .achievements__left-card-item {
+      width: 100%;
+    }
+
+    .left-card-text {
+      width: auto;
+      min-width: 0;
+      flex: 1;
+    }
+
+    .achievements__right-desc {
+      width: 100%;
+    }
+
+    .achievements__languages {
+      width: 100%;
     }
   }
 }
