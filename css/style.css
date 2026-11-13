@@ -676,6 +676,20 @@ main {
     grid-template-columns: repeat(3, 200px);
     gap: 24px;
     width: 648px;
+    position: relative;
+
+    &::after {
+       transform: translateX(-1px);
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background-image:
+        linear-gradient(to right, transparent calc(33% - 0.5px), #DFE3E5 calc(33% - 0.5px), #DFE3E5 calc(33% + 0.5px), transparent calc(33% + 0.5px)),
+        linear-gradient(to right, transparent calc(67.5% - 0.5px), #DFE3E5 calc(67.5% - 0.5px), #DFE3E5 calc(67.5% + 0.5px), transparent calc(67.5% + 0.5px)),
+        linear-gradient(to bottom, transparent calc(50% - 0.5px), #DFE3E5 calc(50% - 0.5px), #DFE3E5 calc(50% + 0.5px), transparent calc(50% + 0.5px));
+    }
   }
 
   .companies__logo {
@@ -686,8 +700,8 @@ main {
     height: 96px;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 200px;
+      height: 96px;
       object-fit: contain;
       display: block;
     }
@@ -766,6 +780,13 @@ main {
     .companies__logos {
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
+
+      &::after {
+        background-image:
+          linear-gradient(to right, transparent calc(50% - 0.5px), #DFE3E5 calc(50% - 0.5px), #DFE3E5 calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+          linear-gradient(to bottom, transparent calc(33% - 0.5px), #DFE3E5 calc(33% - 0.5px), #DFE3E5 calc(33% + 0.5px), transparent calc(33% + 0.5px)),
+          linear-gradient(to bottom, transparent calc(67.5% - 0.5px), #DFE3E5 calc(67.5% - 0.5px), #DFE3E5 calc(67.5% + 0.5px), transparent calc(67.5% + 0.5px));
+      }
     }
 
     .companies__logo {
@@ -2849,7 +2870,7 @@ main {
 @media (max-width: 1320px) {
   .p-section-keyvisual {
     .keyvisual__inner {
-      gap: 132px;
+      gap: 90px;
 
     }
   }
