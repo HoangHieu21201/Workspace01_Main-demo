@@ -687,8 +687,8 @@ main {
       z-index: 1;
       pointer-events: none;
       background-image:
-        linear-gradient(to right, transparent calc(33% - 0.5px), #DFE3E5 calc(33% - 0.5px), #DFE3E5 calc(33% + 0.5px), transparent calc(33% + 0.5px)),
-        linear-gradient(to right, transparent calc(67.5% - 0.5px), #DFE3E5 calc(67.5% - 0.5px), #DFE3E5 calc(67.5% + 0.5px), transparent calc(67.5% + 0.5px)),
+        linear-gradient(to right, transparent calc(32.9% - 0.5px), #DFE3E5 calc(32.9% - 0.5px), #DFE3E5 calc(32.9% + 0.5px), transparent calc(32.9% + 0.5px)),
+        linear-gradient(to right, transparent calc(67.4% - 0.5px), #DFE3E5 calc(67.4% - 0.5px), #DFE3E5 calc(67.4% + 0.5px), transparent calc(67.4% + 0.5px)),
         linear-gradient(to bottom, transparent calc(50% - 0.5px), #DFE3E5 calc(50% - 0.5px), #DFE3E5 calc(50% + 0.5px), transparent calc(50% + 0.5px));
     }
   }
@@ -785,8 +785,8 @@ main {
       &::after {
         background-image:
           linear-gradient(to right, transparent calc(50% - 0.5px), #DFE3E5 calc(50% - 0.5px), #DFE3E5 calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-          linear-gradient(to bottom, transparent calc(33% - 0.5px), #DFE3E5 calc(33% - 0.5px), #DFE3E5 calc(33% + 0.5px), transparent calc(33% + 0.5px)),
-          linear-gradient(to bottom, transparent calc(67.5% - 0.5px), #DFE3E5 calc(67.5% - 0.5px), #DFE3E5 calc(67.5% + 0.5px), transparent calc(67.5% + 0.5px));
+          linear-gradient(to bottom, transparent calc(32.9% - 0.5px), #DFE3E5 calc(32.9% - 0.5px), #DFE3E5 calc(32.9% + 0.5px), transparent calc(32.9% + 0.5px)),
+          linear-gradient(to bottom, transparent calc(67.4% - 0.5px), #DFE3E5 calc(67.4% - 0.5px), #DFE3E5 calc(67.4% + 0.5px), transparent calc(67.4% + 0.5px));
       }
     }
 
