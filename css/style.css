@@ -463,8 +463,7 @@ main {
 
 /*  Keyvisual Section  */
 .p-section-keyvisual {
-  padding-top: 88px;
-  padding-bottom: 72px;
+  padding-block: 88px 72px;
 
   .keyvisual__inner {
     display: flex;
@@ -565,6 +564,8 @@ main {
 
 @media (max-width: 1200px) {
   .p-section-keyvisual {
+    padding-block: 50px;
+
     .keyvisual__inner {
       gap: 60px;
     }
@@ -679,7 +680,7 @@ main {
     position: relative;
 
     &::after {
-       transform: translateX(-1px);
+      transform: translateX(-1px);
       content: "";
       position: absolute;
       inset: 0;
@@ -710,7 +711,7 @@ main {
 
 @media (max-width: 1200px) {
   .p-section-companies {
-    padding-block: 120px 80px;
+    padding-block: 80px 80px;
 
     .companies__inner {}
 
@@ -983,6 +984,8 @@ main {
 
 @media (max-width: 1200px) {
   .p-section-testimonial {
+    padding-block: 100px 140px;
+
     .testimonial__left {
       max-width: 600px;
       gap: 36px;
@@ -1338,6 +1341,13 @@ main {
     text-align: center;
     color: var(--color-black);
   }
+}
+
+@media (max-width: 1200px) {
+  .p-section-resume {
+    padding-block: 180px 100px;
+  }
+
 }
 
 @media (max-width: 992px) {
@@ -1739,6 +1749,8 @@ main {
 
 @media (max-width: 1200px) {
   .p-section-process {
+    padding-block: 120px;
+
     .process__inner {
       gap: 60px;
     }
@@ -1948,6 +1960,7 @@ main {
       box-shadow 0.25s ease;
 
     &:hover {
+      cursor: pointer;
       transform: translateY(-4px);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
     }
@@ -2049,6 +2062,12 @@ main {
   }
 }
 
+@media (max-width: 1200px) {
+  .p-section-service {
+    padding-block: 120px 140px;
+  }
+}
+
 @media (max-width: 992px) {
   .p-section-service {
     padding-block: 80px;
@@ -2063,9 +2082,10 @@ main {
     }
 
     .service__item {
+      gap: 28px;
       width: 100%;
       height: auto;
-      padding: 36px 20px;
+      padding: 30px 20px;
     }
 
     .service__action {
@@ -2150,6 +2170,7 @@ main {
       box-shadow 0.25s ease;
 
     &:hover {
+      cursor: pointer;
       transform: translateY(-4px);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
     }
@@ -2317,7 +2338,21 @@ main {
 }
 
 /* RESPONSIVE: Achievements */
+@media (max-width: 1200px) {
+  .p-section-achievements {
+    padding-block: 120px;
 
+    .achievements__right-info {
+      gap: 20px;
+    }
+
+    .achievements__left,
+    .achievements__right {
+      gap: 32px;
+    }
+
+  }
+}
 
 
 @media (max-width: 992px) {
@@ -2453,6 +2488,7 @@ main {
     transition:
       opacity 0.3s ease,
       visibility 0.3s ease;
+      cursor: pointer;
   }
 
   .studies__slide:hover .studies__slide-overlay,
@@ -2583,6 +2619,12 @@ main {
     .studies__nav-container {
       padding-inline: 15px;
     }
+  }
+}
+
+@media (max-width: 1320px) {
+  .p-section-studies {
+    padding-block: 128px;
   }
 }
 
@@ -2749,6 +2791,7 @@ main {
       box-shadow 0.25s ease;
 
     &:hover {
+      cursor: pointer;
       box-shadow: 0px 12px 12px rgba(18, 19, 20, 0.1);
       transform: translateY(-2px);
     }
